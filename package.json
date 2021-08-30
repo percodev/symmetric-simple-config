@@ -1,0 +1,28 @@
+{
+  "name": "symmetric",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "build:linux": "pkg ./index.js --targets node14-linux-x64 --output ./pw_symmetric",
+    "build:win": "pkg ./index.js --targets node14-win-x64 --output ./pw_symmetric"
+  },
+  "keywords": [
+    "SymmetricDS",
+    "PERCo",
+    "PERCo-Web"
+  ],
+  "pkg": {
+    "scripts": "./index.js"
+  },
+  "author": "PERCo",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^8.1.0",
+    "extract-zip": "^2.0.1",
+    "ini": "^2.0.0",
+    "mysql2": "^2.3.0",
+    "pkg": "^5.3.1"
+  }
+}
